@@ -7,8 +7,7 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="bradcam_text text-center">
-              <h3>About Us</h3>
-              <p>Pixel perfect design with awesome contents</p>
+              <h3>Pudak B</h3>
             </div>
           </div>
         </div>
@@ -21,7 +20,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="story_heading">
-              <h3>Our Story</h3>
+              <h3>Tentang Desa</h3>
             </div>
             <div class="row">
               <div class="col-lg-11 offset-lg-1">
@@ -29,22 +28,13 @@
                   <div class="row">
                     <div class="col-lg-9">
                       <p>
-                        Consulting represents success at realizing the company
-                        is going in the wrong direction. The only time the
-                        company fails is when it is not possible to do a
-                        turnaround anymore. We help companies pivot into more
-                        profitable directions where they can expand and grow. It
-                        is inevitable that companies will end up making a few
-                        mistakes; we help them correct these mistakes.
-                      </p>
-                      <p>
-                        Consulting represents success at realizing the company
-                        is going in the wrong direction. The only time the
-                        company fails is when it is not possible to do a
-                        turnaround anymore. We help companies pivot into more
-                        profitable directions where they can expand and grow. It
-                        is inevitable that companies will end up making a few
-                        mistakes; we help them correct these mistakes.
+                      Padukuhan Pudak B merupakan bagian dari wilayah Kalurahan 
+                      Jerukwudel, Kapanewon Girisubo,Kabupaten Gunungkidul. 
+                      Padukuhan Pudak B berdekatan dengan Pudak A dan secara wilayah 
+                      administratif kedua padukuhan ini terpisah, namun secara budaya dan 
+                      sosial warganya bersatu dan tidak ada yang membedakan sehingga menciptakan 
+                      fondasi yang kuat antardesa.
+                      Rata-rata warga Pudak B bekerja sebagai petani ladang. 
                       </p>
                     </div>
                   </div>

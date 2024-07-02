@@ -33,13 +33,6 @@
   </head>
 
   <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
 
     <!-- header-start -->
     <header>
@@ -76,7 +69,7 @@
                     </nav>
                   </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                <!-- <div class="col-xl-4 col-lg-4 d-none d-lg-block">
                   <div
                     class="social_wrap d-flex align-items-center justify-content-end"
                   >
@@ -93,29 +86,10 @@
                             <i class="fa fa-instagram"></i>
                           </a>
                         </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-linkedin"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-facebook"></i>
-                          </a>
-                        </li>
                       </ul>
                     </div>
                   </div>
-                </div>
-                <div class="seach_icon">
-                  <a
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
-                    href="#"
-                  >
-                    <i class="fa fa-search"></i>
-                  </a>
-                </div>
+                </div> -->
                 <div class="col-12">
                   <div class="mobile_menu d-block d-lg-none"></div>
                 </div>
@@ -137,9 +111,9 @@
                 <div class="footer_logo">
                     <h3 class="footer_title">Profil</h3>
                 </div>
-                <b>Padukuhan Pudak B - Girisubo
+                <b>Padukuhan Pudak B - Kel. Girisubo
                     <br>
-                    Kab. Gunung Kidul - DIY</b>
+                    Kab. Gunungkidul - DIY</b>
                 <p>
                 Website desa dibangun sebagai bagian dari SISTEM INFORMASI 
                 DESA yang berfungsi sebagai portal informasi<br />
@@ -169,65 +143,22 @@
             </div>
             <div class="col-xl-2 col-md-6 col-lg-2">
               <div class="footer_widget">
-                <h3 class="footer_title">Company</h3>
+                <h3 class="footer_title">
+                <i class="fa fa-envelope"></i>
+                  Email</h3>
                 <ul class="links">
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#"> Gallery</a></li>
-                  <li><a href="#"> Contact</a></li>
+                  <li><a href="#">pudakb@gmail.com</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-xl-3 col-md-6 col-lg-3">
               <div class="footer_widget">
-                <h3 class="footer_title">Popular destination</h3>
-                <ul class="links double_links">
-                  <li><a href="#">Indonesia</a></li>
-                  <li><a href="#">America</a></li>
-                  <li><a href="#">India</a></li>
-                  <li><a href="#">Switzerland</a></li>
-                  <li><a href="#">Italy</a></li>
-                  <li><a href="#">Canada</a></li>
-                  <li><a href="#">Franch</a></li>
-                  <li><a href="#">England</a></li>
+                <h3 class="footer_title">
+                <i class="fa fa-instagram"></i>
+                Instagram</h3>
+                <ul class="links">
+                  <li><a href="#">@pudak_b</a></li>
                 </ul>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 col-lg-3">
-              <div class="footer_widget">
-                <h3 class="footer_title">Instagram</h3>
-                <div class="instagram_feed">
-                  <div class="single_insta">
-                    <a href="#">
-                      <img src="img/instagram/1.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="single_insta">
-                    <a href="#">
-                      <img src="img/instagram/2.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="single_insta">
-                    <a href="#">
-                      <img src="img/instagram/3.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="single_insta">
-                    <a href="#">
-                      <img src="img/instagram/4.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="single_insta">
-                    <a href="#">
-                      <img src="img/instagram/5.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="single_insta">
-                    <a href="#">
-                      <img src="img/instagram/6.png" alt="" />
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -247,31 +178,6 @@
       </div>
     </footer>
 
-    <!-- Modal -->
-    <div
-      class="modal fade custom_search_pop"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="serch_form">
-            <input type="text" placeholder="Search" />
-            <button type="submit">search</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- link that opens popup -->
-    <!--     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
-
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script> -->
-    <!-- JS here -->
     <script src="{{ asset('frontend/js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <script src="{{ asset('frontend/js/vendor/jquery-1.12.4.min.js') }}"></script>
     <script src="{{ asset('frontend/js/popper.min.js') }}"></script>
