@@ -120,28 +120,56 @@
                   <!-- <a href="#">+10 367 826 2567</a> <br />
                   <a href="#">contact@carpenter.com</a> -->
                 </p>
-                <div class="socail_links">
+                <!-- <div class="socail_links">
                   <ul>
                     <li>
-                      <a href="#">
-                        <i class="ti-facebook"></i>
-                      </a>
+                      <h3 class="footer_title">
+                      <i class="fa fa-envelope"></i>
+                        Email</h3>
+                      <ul class="links">
+                        <li><a href="#">pudakb@gmail.com</a></li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-youtube-play"></i>
-                      </a>
-                    </li>
+                      <h3 class="footer_title">
+                      <i class="fa fa-instagram"></i>
+                      Instagram</h3>
+                      <ul class="links">
+                        <li><a href="#">@pudak_b</a></li>
+                      </ul>
+                    
                   </ul>
+                </div> -->
+                <div class="row">
+                  <div class="col-xl-4 col-md-6 col-lg-4 mt-10">
+                    <div class="footer_widget">
+                      <h3 class="footer_title">
+                      <i class="fa fa-envelope"></i>
+                        Email</h3>
+                      <ul class="links">
+                        <li><a href="#">pudakb@gmail.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6 col-lg-6 mt-10 ml-5">
+                    <div class="footer_widget">
+                      <h3 class="footer_title">
+                      <i class="fa fa-instagram"></i>
+                      Instagram</h3>
+                      <ul class="links">
+                        <li><a href="#">@pudak_b</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-2 col-md-6 col-lg-2">
+            <div class="col-xl-7 col-md-6 col-lg-7" style="margin: left 50px;">
+              <div class="footer_widget">
+                <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15796.540530373512!2d110.70959326246582!3d-8.189139743476218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bc74cb0b953fb%3A0xff05399f52a76402!2sPudak%2C%20Jepitu%2C%20Kec.%20Girisubo%2C%20Kabupaten%20Gunung%20Kidul%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1719977326993!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen>></iframe>
+              </div>
+            </div>
+            <!-- <div class="col-xl-2 col-md-6 col-lg-2 mt-10">
               <div class="footer_widget">
                 <h3 class="footer_title">
                 <i class="fa fa-envelope"></i>
@@ -151,7 +179,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6 col-lg-3">
+            <div class="col-xl-2 col-md-6 col-lg-2 mt-10">
               <div class="footer_widget">
                 <h3 class="footer_title">
                 <i class="fa fa-instagram"></i>
@@ -160,7 +188,7 @@
                   <li><a href="#">@pudak_b</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
