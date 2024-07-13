@@ -32,7 +32,6 @@
 </head>
 
 <body>
-
     <!-- header-start -->
     <header>
         <div class="header-area">
@@ -59,6 +58,9 @@
                                                 <a href="{{ route('about') }}">Informasi Desa</a>
                                             </li>
                                             <li>
+                                                <a href="{{ route('news.index') }}">Berita</a>
+                                            </li>
+                                            <li>
                                                 <a href="travel_destination.html">Layanan</a>
                                             </li>
                                             <li>
@@ -68,27 +70,21 @@
                                     </nav>
                                 </div>
                             </div>
-                            <!-- <div class="col-xl-4 col-lg-4 d-none d-lg-block">
-                  <div
-                    class="social_wrap d-flex align-items-center justify-content-end"
-                  >
-                    <div class="number">
-                      <p>
-                        <i class="fa fa-phone"></i>
-                        10(256)-928 256
-                      </p>
-                    </div>
-                    <div class="social_links d-none d-xl-block">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-instagram"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> -->
+                            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                <div class="login_wrap d-flex align-items-center justify-content-end">
+                                    <div class="login_btn">
+                                        @guest
+                                            <a href="{{ route('login') }}" class="boxed-btn">Login</a>
+                                        @else
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                class="d-inline">
+                                                @csrf
+                                                <button type="submit" class="boxed-btn btn-logout">Logout</button>
+                                            </form>
+                                        @endguest
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
@@ -99,7 +95,10 @@
         </div>
     </header>
     <!-- header-end -->
+
+    <!-- Main Content -->
     @yield('content')
+
 
     <footer class="footer">
         <div class="footer_top">
@@ -116,29 +115,7 @@
                             <p>
                                 Website desa dibangun sebagai bagian dari SISTEM INFORMASI
                                 DESA yang berfungsi sebagai portal informasi<br />
-                                <!-- <a href="#">+10 367 826 2567</a> <br />
-                  <a href="#">contact@carpenter.com</a> -->
                             </p>
-                            <!-- <div class="socail_links">
-                  <ul>
-                    <li>
-                      <h3 class="footer_title">
-                      <i class="fa fa-envelope"></i>
-                        Email</h3>
-                      <ul class="links">
-                        <li><a href="#">pudakb@gmail.com</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <h3 class="footer_title">
-                      <i class="fa fa-instagram"></i>
-                      Instagram</h3>
-                      <ul class="links">
-                        <li><a href="#">@pudak_b</a></li>
-                      </ul>
-                    
-                  </ul>
-                </div> -->
                             <div class="row">
                                 <div class="col-xl-4 col-md-6 col-lg-4 mt-10">
                                     <div class="footer_widget">
@@ -170,29 +147,9 @@
                             <iframe class="mb-4 mb-lg-0"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15796.540530373512!2d110.70959326246582!3d-8.189139743476218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bc74cb0b953fb%3A0xff05399f52a76402!2sPudak%2C%20Jepitu%2C%20Kec.%20Girisubo%2C%20Kabupaten%20Gunung%20Kidul%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1719977326993!5m2!1sid!2sid"
                                 frameborder="0" style="border:0; width: 100%; height: 384px;"
-                                allowfullscreen>></iframe>
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-                    <!-- <div class="col-xl-2 col-md-6 col-lg-2 mt-10">
-              <div class="footer_widget">
-                <h3 class="footer_title">
-                <i class="fa fa-envelope"></i>
-                  Email</h3>
-                <ul class="links">
-                  <li><a href="#">pudakb@gmail.com</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-2 col-md-6 col-lg-2 mt-10">
-              <div class="footer_widget">
-                <h3 class="footer_title">
-                <i class="fa fa-instagram"></i>
-                Instagram</h3>
-                <ul class="links">
-                  <li><a href="#">@pudak_b</a></li>
-                </ul>
-              </div>
-            </div> -->
                 </div>
             </div>
         </div>
