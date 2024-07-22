@@ -28,7 +28,7 @@ class UserController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('auth.login')->with(['success' => 'Registration successful!']);
+        return redirect()->view('auth.login')->with(['success' => 'Registration successful!']);
     }
 
     public function showLoginForm()
@@ -53,6 +53,6 @@ class UserController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect()->route('login')->with(['success' => 'Logged out successfully!']);
+        return redirect()->route('home')->with(['success' => 'Logged out successfully!']);
     }
 }

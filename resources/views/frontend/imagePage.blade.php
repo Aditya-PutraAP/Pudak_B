@@ -1,8 +1,7 @@
 @extends('frontend.layout')
 
 @section('content')
-
-<div class="bradcam_area bradcam_bg_3">
+    {{-- <div class="bradcam_area bradcam_bg_3">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -44,6 +43,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 
+    <div class="gallery">
+        @foreach ($gambar as $item)
+            <div class="gallery-item-container">
+                <h3>{{ $item->title }}</h3>
+                <div class="gallery-item">
+                    <img src="{{ asset($item->image) }}" alt="{{ $item->title }}">
+                </div>
+            </div>
+        @endforeach
+    </div>
 @endsection
