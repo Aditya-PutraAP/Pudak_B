@@ -43,7 +43,6 @@
                                 <div class="logo">
                                     <a href="/">
                                         <p class="h4 font-weight-bold">Pudak B</p>
-                                        <!-- <img src="{{ asset('frontend/img/logo.png') }}" alt="" /> -->
                                     </a>
                                 </div>
                             </div>
@@ -51,21 +50,32 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li>
-                                                <a class="active" href="/">Beranda</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('about') }}">Informasi Desa</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('news.index') }}">Berita</a>
-                                            </li>
-                                            <li>
-                                                <a href="travel_destination.html">Layanan</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact.html">Kontak</a>
-                                            </li>
+                                            @guest
+                                                <li>
+                                                    <a class="active" href="{{ route('home') }}">Beranda</a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('fotografi.index') }}">Fotografi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('news.index') }}">Berita</a>
+                                                </li>
+                                            @else
+                                                @auth
+                                                    <li>
+                                                        <a href="{{ route('produk.index') }}">Produk</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('kebudayaan.index') }}">Kebudayaan</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('gambar.index') }}">Input Gambar</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('news.index') }}">Verifikasi Berita</a>
+                                                    </li>
+                                                @endauth
+                                            @endguest
                                         </ul>
                                     </nav>
                                 </div>
@@ -202,6 +212,15 @@
                 rightIcon: '<span class="fa fa-caret-down"></span>',
             },
         });
+    </script>
+    <script>
+        function confirmDelete(event) {
+            event.preventDefault();
+            const confirmation = confirm('Apakah Anda yakin ingin menghapus konten ini?');
+            if (confirmation) {
+                event.target.submit();
+            }
+        }
     </script>
 </body>
 

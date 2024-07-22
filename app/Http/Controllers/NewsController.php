@@ -9,7 +9,7 @@ class NewsController extends Controller
 {
     public function index()
     {
-        $news = News::latest()->get();
+        $news = News::whereNotNull('verified_at')->latest()->get();
         return view('news.index', compact('news'));
     }
 
