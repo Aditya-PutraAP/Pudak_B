@@ -4,13 +4,22 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\News;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class NewsController extends Controller
 {
     public function index()
     {
-        $news = News::whereNotNull('verified_at')->latest()->get();
-        return view('news.index', compact('news'));
+        $isLoggedIn = Auth::check();
+
+        if (!$isLoggedIn) {
+            $news = News::whereNotNull('verified_at')->latest()->get();
+        } else {
+            $news = News::latest()->get();
+        }
+
+        return view('news.index', compact('news', 'isLoggedIn'));
     }
 
     public function create()
@@ -25,7 +34,7 @@ class NewsController extends Controller
             'author' => 'required|string|max:255',
             'content' => 'required',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'editor' => 'nullable|string|max:255',
+            // 'editor' => 'nullable|string|max:255',
         ]);
 
         $imagePath = null;
@@ -42,7 +51,7 @@ class NewsController extends Controller
             'author' => $request->author,
             'content' => $request->content,
             'image' => $imagePath,
-            'editor' => $request->editor,
+            // 'editor' => $request->editor,
         ]);
 
         return redirect()->route('news.index')->with(['success' => 'News Created Successfully!']);
@@ -85,6 +94,7 @@ class NewsController extends Controller
             'content' => $request->content,
             'image' => $imagePath,
             'editor' => $request->editor,
+            'verified_at' => Carbon::now()
         ]);
 
         return redirect()->route('news.index')->with(['success' => 'News Updated Successfully!']);

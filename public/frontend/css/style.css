@@ -164,6 +164,12 @@ label {
     }
 }
 
+.gallery-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
 .gallery {
     display: flex;
     flex-direction: column;
